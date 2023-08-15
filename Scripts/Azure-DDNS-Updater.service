@@ -1,0 +1,9 @@
+[Unit]
+Description=Azure DDNS Updater Service
+
+[Service]
+Type=simple
+ExecStart=/home/pi/dotnet/dotnet /home/pi/Azure-DDNS-Updater/Azure-DDNS-Updater.dll
+
+[Install]
+WantedBy=multi-user.target
